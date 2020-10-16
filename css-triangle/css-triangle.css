@@ -1,0 +1,31 @@
+.arrow {
+  width: 0;
+  height: 0;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.arrow-up {
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #1a8e58;
+}
+
+.arrow-down {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #e96767;
+}
+
+.arrow-left {
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #5a5aee;
+}
+
+.arrow-right {
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #ddc749;
+}
+/*# sourceMappingURL=css-triangle.css.map */
