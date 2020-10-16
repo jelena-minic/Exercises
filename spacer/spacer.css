@@ -1,0 +1,18 @@
+.card {
+  height: 150px;
+  width: 50%;
+  background-color: #018a56;
+  margin-right: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 601px) {
+  .card {
+    margin-bottom: 100px;
+  }
+}
+/*# sourceMappingURL=spacer.css.map */

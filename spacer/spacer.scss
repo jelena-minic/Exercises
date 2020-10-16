@@ -1,0 +1,27 @@
+$spacer-sm: 30px;
+$spacer-lg: 100px;
+
+$mobile	: 600px !default;
+
+@mixin desktop-up {
+	@media only screen and (min-width : $mobile + 1) {
+		@content;
+	}
+}
+
+.card {
+    height: 150px;
+    width: 50%;
+    background-color: rgb(1, 138, 86);
+    margin-right: 20px; 
+    padding: 20px;
+    margin-bottom: $spacer-sm;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @include desktop-up {
+    margin-bottom: $spacer-lg;
+    }
+}
+
+
