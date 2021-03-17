@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section id="img-slider" class="img-slider">
+            <div class="img-slider__slide-container">
+                <a href="#1" class="img-slider__slide img-slider__slide--active js-slide"><img class="img-slider__img" src="https://via.placeholder.com/860x400?text=image+1" alt="image1"></a>
+                <a href="#2" class="img-slider__slide js-slide"><img class="img-slider__img" src="https://via.placeholder.com/860x400?text=image+2" alt="image2"></a>
+                <a href="#3" class="img-slider__slide js-slide"><img class="img-slider__img" src="https://via.placeholder.com/860x400?text=image+3" alt="image3"></a>
+                <a href="#4" class="img-slider__slide js-slide"><img class="img-slider__img" src="https://via.placeholder.com/860x400?text=image+4" alt="image4"></a>
+            </div>
+            <button class="img-slider__button img-slider__button--left js-prev" onclick="decrementSlider()">
+                <div class="img-slider__arrow img-slider__arrow--left"></div>
+            </button>
+            <button class="img-slider__button img-slider__button--right js-next" onclick="incrementSlider()">
+                <div class="img-slider__arrow img-slider__arrow--right"></div>
+            </button>
+        </section>
+        <section class="slider-dots">
+            <ul class="slider-dots__list">
+                <li class="slider-dots__dot slider-dots__dot--active js-dot" onclick="currentDot(0)"></li>
+                <li class="slider-dots__dot js-dot" onclick="currentDot(1)"></li>
+                <li class="slider-dots__dot js-dot" onclick="currentDot(2)"></li>
+                <li class="slider-dots__dot js-dot" onclick="currentDot(3)"></li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

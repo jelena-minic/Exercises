@@ -1,0 +1,113 @@
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.img-slider {
+  border: 2px solid red;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.img-slider__slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.img-slider__slide {
+  max-width: 100%;
+}
+
+.img-slider:hover .img-slider__button {
+  opacity: 1;
+  -webkit-transition: opacity 300ms linear;
+  transition: opacity 300ms linear;
+}
+
+.img-slider__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(80, 78, 78, 0.1);
+  opacity: 0;
+}
+
+.img-slider__button--hidden {
+  display: none;
+  pointer-events: none;
+}
+
+.img-slider__button--left {
+  left: 0;
+}
+
+.img-slider__button--right {
+  right: 0;
+}
+
+.img-slider__arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 0px;
+  height: 0px;
+}
+
+.img-slider__arrow--left {
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #6ac2dd;
+}
+
+.img-slider__arrow--right {
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #6ac2dd;
+}
+
+.slider-dots .slider-dots__list {
+  position: absolute;
+  list-style: none;
+  left: 50%;
+  padding-left: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.slider-dots .slider-dots__dot {
+  display: inline-block;
+  margin: 0 20px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-color: #3d85ac;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.slider-dots .slider-dots__dot:hover {
+  background-color: #c2f0f5;
+}
+
+.slider-dots .slider-dots__dot--active {
+  background-color: #c2f0f5;
+}
+/*# sourceMappingURL=style.css.map */
